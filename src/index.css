@@ -1,0 +1,58 @@
+body {
+  font: 14px "Roboto", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.game-header {
+	padding: 15px 0;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.game-info {
+  margin-top: 15px;
+}
